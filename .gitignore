@@ -1,0 +1,37 @@
+# Dependencias
+node_modules/
+
+# Archivos de entorno
+.env
+.env.*
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Salidas de build
+dist/
+build/
+out/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de cobertura de tests
+coverage/
+
+# Archivos temporales
+*.local
+*.sublime-workspace
+*.sublime-project
+
+# Archivos de bases de datos temporales
+*.sqlite
+*.sqlite3
+
+# Otros
+seeds/
+public/uploads/
