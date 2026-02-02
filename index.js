@@ -28,25 +28,25 @@ app.use(cors());
 //3.1 Ruta Base (Home) - Documentación simple
 // 6.3 Ruta Home con documentación básica de la API
 // AJUSTE: Cambiamos '/' por '/apidragonlance' para que coincida con Nginx
-app.get('/', (req, res) => {
+app.get('/apidragonlance', (req, res) => {
     res.status(200).json({
         message: "🐉 Bienvenido a la API de la Dragonlance 🐉",
         author: "kabalera82",
         documentation: {
             characters: [
-            { method: "GET", url: "https://dragonlanceapi.vercel.app/characters", description: "Ver todos los personajes" },
-                { method: "GET", url: "https://dragonlanceapi.vercel.app/characters/:id", description: "Ver personaje por ID" },
-                { method: "GET", url: "https://dragonlanceapi.vercel.app/characters/name/:name", description: "Buscar por nombre" },
-                { method: "POST", url: "https://dragonlanceapi.vercel.app/characters", description: "Crear personaje nuevo" },
-                { method: "PUT", url: "https://dragonlanceapi.vercel.app/characters/:id", description: "Editar personaje" },
-                { method: "DELETE", url: "https://dragonlanceapi.vercel.app/characters/:id", description: "Eliminar personaje" }
+            { method: "GET", url: "https://dragonlanceapi.vercel.app/apidragonlance/characters", description: "Ver todos los personajes" },
+                { method: "GET", url: "https://dragonlanceapi.vercel.app/apidragonlance/characters/:id", description: "Ver personaje por ID" },
+                { method: "GET", url: "https://dragonlanceapi.vercel.app/apidragonlance/characters/name/:name", description: "Buscar por nombre" },
+                { method: "POST", url: "https://dragonlanceapi.vercel.app/apidragonlance/characters", description: "Crear personaje nuevo" },
+                { method: "PUT", url: "https://dragonlanceapi.vercel.app/apidragonlance/characters/:id", description: "Editar personaje" },
+                { method: "DELETE", url: "https://dragonlanceapi.vercel.app/apidragonlance/characters/:id", description: "Eliminar personaje" }
             ],
             books: [
-                { method: "GET", url: "https://dragonlanceapi.vercel.app/books", description: "Ver todos los libros" },
-                { method: "GET", url: "https://dragonlanceapi.vercel.app/books/:id", description: "Ver libro por ID" },
-                { method: "POST", url: "https://dragonlanceapi.vercel.app/books", description: "Crear libro nuevo" },
-                { method: "PUT", url: "https://dragonlanceapi.vercel.app/books/:id", description: "Editar libro" },
-                { method: "DELETE", url: "https://dragonlanceapi.vercel.app/books/:id", description: "Eliminar libro" }
+                { method: "GET", url: "https://dragonlanceapi.vercel.app/apidragonlance/books", description: "Ver todos los libros" },
+                { method: "GET", url: "https://dragonlanceapi.vercel.app/apidragonlance/books/:id", description: "Ver libro por ID" },
+                { method: "POST", url: "https://dragonlanceapi.vercel.app/apidragonlance/books", description: "Crear libro nuevo" },
+                { method: "PUT", url: "https://dragonlanceapi.vercel.app/apidragonlance/books/:id", description: "Editar libro" },
+                { method: "DELETE", url: "https://dragonlanceapi.vercel.app/apidragonlance/books/:id", description: "Eliminar libro" }
             ]
         }
     });
