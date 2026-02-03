@@ -1,8 +1,3 @@
-// Arreglamos problema de DNS en algunas plataformas de hosting
-// y el puto windows que no usa bien los DNS públicos
-const dns = require('dns');
-dns.setServers(['8.8.8.8', '8.8.4.4']);
-
 
 //1. Importamos el dotenv y lo configuramos para cargar las varibles de entorno
 require('dotenv').config();
